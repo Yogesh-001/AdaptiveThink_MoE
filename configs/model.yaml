@@ -1,0 +1,9 @@
+model:
+  name: Qwen/Qwen2.5-0.5B-Instruct
+
+quantization:
+  load_in_4bit: true
+
+generation:
+  max_new_tokens: 256
+  temperature: 0.7
