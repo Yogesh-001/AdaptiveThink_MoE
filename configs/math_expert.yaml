@@ -1,0 +1,27 @@
+# Math Expert Configuration
+# ==========================
+# Same base model and LoRA architecture as code expert,
+# but this adapter will specialize in mathematical reasoning.
+#
+# Key difference from code expert:
+# - max_length: 512 (math solutions are shorter than code)
+# - System prompt will emphasize step-by-step reasoning
+
+model_name: Qwen/Qwen2.5-0.5B-Instruct
+
+dataset: gsm8k
+
+# Shorter than code (512 vs 1024) because math solutions are typically
+# more concise than code implementations
+max_length: 512
+
+lora:
+  r: 16        # Same rank as code expert (keeps experts comparable)
+  alpha: 32    # Same scaling factor
+  dropout: 0.05
+
+training:
+  epochs: 3          # 3 epochs for math (GSM8K benefits from more passes)
+  batch_size: 1      # 1 per step (accumulated to effective batch of 16)
+  gradient_accumulation_steps: 16
+  learning_rate: 2e-4
