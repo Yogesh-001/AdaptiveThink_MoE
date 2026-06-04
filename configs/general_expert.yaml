@@ -1,0 +1,28 @@
+# General Expert Configuration
+# ==============================
+# The General Expert handles all non-code, non-math tasks:
+# explanations, QA, summarization, creative writing, advice, etc.
+#
+# Key differences from specialized experts:
+# - max_length: 768 (general responses vary in length)
+# - epochs: 2 (Alpaca data is diverse, less overfitting risk)
+# - Same LoRA architecture for consistency across all experts
+
+model_name: Qwen/Qwen2.5-0.5B-Instruct
+
+dataset: alpaca-cleaned
+
+# General responses vary in length (some short answers, some explanations)
+# 768 is a middle ground between code (1024) and math (512)
+max_length: 768
+
+lora:
+  r: 16        # Same rank across all experts (fair comparison)
+  alpha: 32    # Same scaling
+  dropout: 0.05
+
+training:
+  epochs: 2          # 2 epochs (Alpaca is diverse, 3 might overfit)
+  batch_size: 1
+  gradient_accumulation_steps: 16
+  learning_rate: 2e-4

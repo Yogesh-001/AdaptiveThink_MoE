@@ -143,7 +143,12 @@ def run_validation(use_test_set: bool = False):
     2. GSM8K test set — quantitative evaluation on held-out data
     """
 
-    adapter_path = sys.argv[1] if len(sys.argv) > 1 else "outputs/math_expert/adapter"
+    adapter_path = "outputs/math_expert/adapter"
+    # Allow overriding adapter path via positional arg (skip flags like --test)
+    for arg in sys.argv[1:]:
+        if not arg.startswith("--"):
+            adapter_path = arg
+            break
 
     if not os.path.exists(adapter_path):
         print(f"ERROR: Adapter not found at '{adapter_path}'")
