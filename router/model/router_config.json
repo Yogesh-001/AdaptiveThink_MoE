@@ -1,0 +1,12 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "n_classes": 3,
+  "classes": [
+    "code",
+    "general",
+    "math"
+  ],
+  "test_accuracy": 0.9607843137254902,
+  "cv_accuracy_mean": 0.9641568627450979
+}

@@ -1,0 +1,1006 @@
+[
+  {
+    "text": "Write a Python function to reverse a string",
+    "label": "code"
+  },
+  {
+    "text": "Implement a binary search algorithm in Python",
+    "label": "code"
+  },
+  {
+    "text": "Create a function that checks if a number is prime",
+    "label": "code"
+  },
+  {
+    "text": "Write code to merge two sorted lists",
+    "label": "code"
+  },
+  {
+    "text": "Implement a stack data structure using a list",
+    "label": "code"
+  },
+  {
+    "text": "Write a Python class for a linked list",
+    "label": "code"
+  },
+  {
+    "text": "Create a function to find duplicates in an array",
+    "label": "code"
+  },
+  {
+    "text": "Write a recursive function to compute Fibonacci numbers",
+    "label": "code"
+  },
+  {
+    "text": "Implement quicksort in Python",
+    "label": "code"
+  },
+  {
+    "text": "Write a function to flatten a nested list",
+    "label": "code"
+  },
+  {
+    "text": "Create a decorator that measures execution time",
+    "label": "code"
+  },
+  {
+    "text": "Write a generator function for infinite prime numbers",
+    "label": "code"
+  },
+  {
+    "text": "Implement a hash map from scratch",
+    "label": "code"
+  },
+  {
+    "text": "Write code to validate an email address using regex",
+    "label": "code"
+  },
+  {
+    "text": "Create a context manager for file handling",
+    "label": "code"
+  },
+  {
+    "text": "Write a function to convert Roman numerals to integers",
+    "label": "code"
+  },
+  {
+    "text": "Implement breadth-first search on a graph",
+    "label": "code"
+  },
+  {
+    "text": "Write a Python script to read and parse a CSV file",
+    "label": "code"
+  },
+  {
+    "text": "Create a function that returns the nth Fibonacci number",
+    "label": "code"
+  },
+  {
+    "text": "Implement a basic calculator that handles +, -, *, /",
+    "label": "code"
+  },
+  {
+    "text": "Fix this code that gives an IndexError",
+    "label": "code"
+  },
+  {
+    "text": "Debug this function that returns incorrect results",
+    "label": "code"
+  },
+  {
+    "text": "Why does this code produce an infinite loop?",
+    "label": "code"
+  },
+  {
+    "text": "What's wrong with this recursive function?",
+    "label": "code"
+  },
+  {
+    "text": "Help me fix this TypeError in my Python script",
+    "label": "code"
+  },
+  {
+    "text": "Explain how list comprehensions work in Python",
+    "label": "code"
+  },
+  {
+    "text": "What does the yield keyword do?",
+    "label": "code"
+  },
+  {
+    "text": "Explain the difference between append and extend in Python",
+    "label": "code"
+  },
+  {
+    "text": "How do decorators work in Python?",
+    "label": "code"
+  },
+  {
+    "text": "What is the difference between a class method and a static method?",
+    "label": "code"
+  },
+  {
+    "text": "Explain how Python handles memory management",
+    "label": "code"
+  },
+  {
+    "text": "What are metaclasses in Python?",
+    "label": "code"
+  },
+  {
+    "text": "How does the GIL affect Python threading?",
+    "label": "code"
+  },
+  {
+    "text": "What is the time complexity of binary search?",
+    "label": "code"
+  },
+  {
+    "text": "Explain how a hash table handles collisions",
+    "label": "code"
+  },
+  {
+    "text": "What's the difference between BFS and DFS?",
+    "label": "code"
+  },
+  {
+    "text": "When should I use a heap vs a sorted list?",
+    "label": "code"
+  },
+  {
+    "text": "Explain dynamic programming with an example",
+    "label": "code"
+  },
+  {
+    "text": "What is memoization and when should I use it?",
+    "label": "code"
+  },
+  {
+    "text": "How do I handle exceptions in Python?",
+    "label": "code"
+  },
+  {
+    "text": "What are Python type hints and how do I use them?",
+    "label": "code"
+  },
+  {
+    "text": "How do I use async/await in Python?",
+    "label": "code"
+  },
+  {
+    "text": "What is the difference between a tuple and a list?",
+    "label": "code"
+  },
+  {
+    "text": "How do virtual environments work in Python?",
+    "label": "code"
+  },
+  {
+    "text": "Explain Python's __init__ and __new__ methods",
+    "label": "code"
+  },
+  {
+    "text": "Write a web scraper to extract article titles from a webpage",
+    "label": "code"
+  },
+  {
+    "text": "Create a REST API endpoint using Flask",
+    "label": "code"
+  },
+  {
+    "text": "Write a function to process JSON data from an API",
+    "label": "code"
+  },
+  {
+    "text": "Implement rate limiting for API requests",
+    "label": "code"
+  },
+  {
+    "text": "Write code to connect to a SQLite database",
+    "label": "code"
+  },
+  {
+    "text": "Create a simple command-line todo app in Python",
+    "label": "code"
+  },
+  {
+    "text": "Write a unit test for a sorting function",
+    "label": "code"
+  },
+  {
+    "text": "Implement a simple chat server using sockets",
+    "label": "code"
+  },
+  {
+    "text": "Write a function to download and save an image from URL",
+    "label": "code"
+  },
+  {
+    "text": "Create a password generator with configurable options",
+    "label": "code"
+  },
+  {
+    "text": "How do I optimize my code for better performance?",
+    "label": "code"
+  },
+  {
+    "text": "What design patterns should I use for this problem?",
+    "label": "code"
+  },
+  {
+    "text": "Refactor this function to be more readable",
+    "label": "code"
+  },
+  {
+    "text": "How do I make this code thread-safe?",
+    "label": "code"
+  },
+  {
+    "text": "What's the best way to structure a Python project?",
+    "label": "code"
+  },
+  {
+    "text": "How do I handle configuration files in Python?",
+    "label": "code"
+  },
+  {
+    "text": "Write documentation for this function",
+    "label": "code"
+  },
+  {
+    "text": "How do I profile my Python code?",
+    "label": "code"
+  },
+  {
+    "text": "What's the most efficient way to read large files?",
+    "label": "code"
+  },
+  {
+    "text": "How do I implement pagination in an API?",
+    "label": "code"
+  },
+  {
+    "text": "Implement a trie data structure",
+    "label": "code"
+  },
+  {
+    "text": "Write a function to detect cycles in a linked list",
+    "label": "code"
+  },
+  {
+    "text": "Create a function to serialize a binary tree",
+    "label": "code"
+  },
+  {
+    "text": "Implement LRU cache",
+    "label": "code"
+  },
+  {
+    "text": "Write code to find the longest common subsequence",
+    "label": "code"
+  },
+  {
+    "text": "Implement Dijkstra's algorithm",
+    "label": "code"
+  },
+  {
+    "text": "Write a function to balance parentheses",
+    "label": "code"
+  },
+  {
+    "text": "Create a simple regex engine",
+    "label": "code"
+  },
+  {
+    "text": "Implement a thread pool",
+    "label": "code"
+  },
+  {
+    "text": "Write a function to find all permutations of a string",
+    "label": "code"
+  },
+  {
+    "text": "How do I implement a binary tree in Python?",
+    "label": "code"
+  },
+  {
+    "text": "Write a Python function to count word frequencies in a text",
+    "label": "code"
+  },
+  {
+    "text": "Implement merge sort with explanation",
+    "label": "code"
+  },
+  {
+    "text": "Write code to detect if two strings are anagrams",
+    "label": "code"
+  },
+  {
+    "text": "Create a function to generate all subsets of a set",
+    "label": "code"
+  },
+  {
+    "text": "Write a Python program to solve the Tower of Hanoi",
+    "label": "code"
+  },
+  {
+    "text": "Implement a priority queue using a heap",
+    "label": "code"
+  },
+  {
+    "text": "Write code to find the shortest path in a maze",
+    "label": "code"
+  },
+  {
+    "text": "Create a function to compress a string using run-length encoding",
+    "label": "code"
+  },
+  {
+    "text": "Implement a bloom filter in Python",
+    "label": "code"
+  },
+  {
+    "text": "If a store sells apples at $3 each and you buy 7, how much do you spend?",
+    "label": "math"
+  },
+  {
+    "text": "A train leaves at 9am traveling at 60mph. Another leaves at 10am at 80mph. When do they meet?",
+    "label": "math"
+  },
+  {
+    "text": "Sarah has 24 cookies. She gives 1/3 to her friend. How many does she have left?",
+    "label": "math"
+  },
+  {
+    "text": "A tank fills at 5 liters per minute. How long to fill a 300 liter tank?",
+    "label": "math"
+  },
+  {
+    "text": "If you save $150 per month, how much will you have in 2 years?",
+    "label": "math"
+  },
+  {
+    "text": "A rectangle's length is twice its width. If the perimeter is 36cm, find the dimensions.",
+    "label": "math"
+  },
+  {
+    "text": "John earns $15/hour. He works 8 hours Monday-Friday. What's his weekly pay?",
+    "label": "math"
+  },
+  {
+    "text": "A book costs $12.99 with a 20% discount. What's the final price?",
+    "label": "math"
+  },
+  {
+    "text": "If 5 workers can build a wall in 10 days, how long for 8 workers?",
+    "label": "math"
+  },
+  {
+    "text": "A car depreciates 15% per year. If it costs $20,000 now, what's it worth in 3 years?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate 15% of 240",
+    "label": "math"
+  },
+  {
+    "text": "Solve for x: 3x + 7 = 22",
+    "label": "math"
+  },
+  {
+    "text": "What is 17 squared?",
+    "label": "math"
+  },
+  {
+    "text": "Find the greatest common divisor of 48 and 36",
+    "label": "math"
+  },
+  {
+    "text": "What is the least common multiple of 12 and 18?",
+    "label": "math"
+  },
+  {
+    "text": "Simplify the fraction 84/126",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the compound interest on $1000 at 5% for 3 years",
+    "label": "math"
+  },
+  {
+    "text": "Solve: 2x\u00b2 - 8x + 6 = 0",
+    "label": "math"
+  },
+  {
+    "text": "What is the square root of 169?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate 3/4 + 2/5",
+    "label": "math"
+  },
+  {
+    "text": "Find the area of a triangle with base 10 and height 6",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the circumference of a circle with radius 7",
+    "label": "math"
+  },
+  {
+    "text": "What is the volume of a sphere with radius 3?",
+    "label": "math"
+  },
+  {
+    "text": "Find the hypotenuse of a right triangle with legs 5 and 12",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the area of a trapezoid with parallel sides 8 and 12, height 5",
+    "label": "math"
+  },
+  {
+    "text": "What is the surface area of a cube with side length 4?",
+    "label": "math"
+  },
+  {
+    "text": "Find the angle in a right triangle if the opposite side is 3 and hypotenuse is 5",
+    "label": "math"
+  },
+  {
+    "text": "What is the probability of rolling a 6 on a fair die?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the mean and median of: 3, 7, 7, 2, 9, 4, 6",
+    "label": "math"
+  },
+  {
+    "text": "If you flip a coin 3 times, what's the probability of getting all heads?",
+    "label": "math"
+  },
+  {
+    "text": "What is the standard deviation of: 10, 12, 14, 16, 18?",
+    "label": "math"
+  },
+  {
+    "text": "In how many ways can you arrange 5 books on a shelf?",
+    "label": "math"
+  },
+  {
+    "text": "What's the probability of drawing a red card from a standard deck?",
+    "label": "math"
+  },
+  {
+    "text": "Is 97 a prime number?",
+    "label": "math"
+  },
+  {
+    "text": "What is the next number in the sequence: 2, 6, 12, 20, 30, ?",
+    "label": "math"
+  },
+  {
+    "text": "Find the sum of all integers from 1 to 100",
+    "label": "math"
+  },
+  {
+    "text": "How many factors does 72 have?",
+    "label": "math"
+  },
+  {
+    "text": "What is 15 factorial?",
+    "label": "math"
+  },
+  {
+    "text": "Find the first 10 terms of the Fibonacci sequence",
+    "label": "math"
+  },
+  {
+    "text": "Convert 72\u00b0F to Celsius",
+    "label": "math"
+  },
+  {
+    "text": "How many combinations of 3 items from a set of 10?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the distance between points (3,4) and (7,1)",
+    "label": "math"
+  },
+  {
+    "text": "What is the slope of the line passing through (2,3) and (6,11)?",
+    "label": "math"
+  },
+  {
+    "text": "Find the midpoint between (1,5) and (9,3)",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the percent increase from 80 to 100",
+    "label": "math"
+  },
+  {
+    "text": "Solve the system: x + y = 10, x - y = 4",
+    "label": "math"
+  },
+  {
+    "text": "What is the quadratic formula?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the nth term of an arithmetic sequence with first term 3 and difference 5",
+    "label": "math"
+  },
+  {
+    "text": "Find the sum of a geometric series with first term 2, ratio 3, and 5 terms",
+    "label": "math"
+  },
+  {
+    "text": "Solve for x: log\u2082(x) = 5",
+    "label": "math"
+  },
+  {
+    "text": "If all A are B, and all B are C, are all A also C?",
+    "label": "math"
+  },
+  {
+    "text": "A bat and ball cost $1.10 total. The bat costs $1 more than the ball. What does the ball cost?",
+    "label": "math"
+  },
+  {
+    "text": "How many handshakes occur in a room of 10 people if everyone shakes hands?",
+    "label": "math"
+  },
+  {
+    "text": "If it takes 5 machines 5 minutes to make 5 widgets, how long for 100 machines to make 100 widgets?",
+    "label": "math"
+  },
+  {
+    "text": "What is the derivative of x\u00b3 + 2x\u00b2?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the integral of 3x\u00b2 from 0 to 4",
+    "label": "math"
+  },
+  {
+    "text": "Find the limit of (x\u00b2-1)/(x-1) as x approaches 1",
+    "label": "math"
+  },
+  {
+    "text": "What is 25% of 80?",
+    "label": "math"
+  },
+  {
+    "text": "How many degrees in the interior angles of a pentagon?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the area of a sector with radius 6 and angle 60\u00b0",
+    "label": "math"
+  },
+  {
+    "text": "What is the binary representation of 42?",
+    "label": "math"
+  },
+  {
+    "text": "Convert 0.375 to a fraction",
+    "label": "math"
+  },
+  {
+    "text": "Find the determinant of matrix [[2,3],[4,5]]",
+    "label": "math"
+  },
+  {
+    "text": "What is the dot product of vectors (1,2,3) and (4,5,6)?",
+    "label": "math"
+  },
+  {
+    "text": "Solve: |2x - 3| = 7",
+    "label": "math"
+  },
+  {
+    "text": "What is 8 to the power of 2/3?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the perimeter of a regular hexagon with side 5",
+    "label": "math"
+  },
+  {
+    "text": "How many diagonals does an octagon have?",
+    "label": "math"
+  },
+  {
+    "text": "Find the inverse of the function f(x) = 2x + 3",
+    "label": "math"
+  },
+  {
+    "text": "What is the probability of getting at least one 6 in 4 dice rolls?",
+    "label": "math"
+  },
+  {
+    "text": "Calculate the weighted average of 70 (weight 2) and 90 (weight 3)",
+    "label": "math"
+  },
+  {
+    "text": "Solve the inequality: 3x - 5 > 7",
+    "label": "math"
+  },
+  {
+    "text": "What is the sum of the first 20 even numbers?",
+    "label": "math"
+  },
+  {
+    "text": "Find all prime numbers between 50 and 70",
+    "label": "math"
+  },
+  {
+    "text": "Explain how the internet works",
+    "label": "general"
+  },
+  {
+    "text": "What is climate change and why does it matter?",
+    "label": "general"
+  },
+  {
+    "text": "How does a car engine work?",
+    "label": "general"
+  },
+  {
+    "text": "Explain the theory of relativity in simple terms",
+    "label": "general"
+  },
+  {
+    "text": "What is blockchain technology?",
+    "label": "general"
+  },
+  {
+    "text": "How do vaccines work?",
+    "label": "general"
+  },
+  {
+    "text": "Explain the water cycle",
+    "label": "general"
+  },
+  {
+    "text": "What causes earthquakes?",
+    "label": "general"
+  },
+  {
+    "text": "How does GPS determine your location?",
+    "label": "general"
+  },
+  {
+    "text": "Explain how airplanes stay in the air",
+    "label": "general"
+  },
+  {
+    "text": "What are the seven continents?",
+    "label": "general"
+  },
+  {
+    "text": "Who painted the Mona Lisa?",
+    "label": "general"
+  },
+  {
+    "text": "What is the tallest mountain in the world?",
+    "label": "general"
+  },
+  {
+    "text": "What causes the northern lights?",
+    "label": "general"
+  },
+  {
+    "text": "How many planets are in our solar system?",
+    "label": "general"
+  },
+  {
+    "text": "What is photosynthesis?",
+    "label": "general"
+  },
+  {
+    "text": "Who invented the telephone?",
+    "label": "general"
+  },
+  {
+    "text": "What is the largest ocean on Earth?",
+    "label": "general"
+  },
+  {
+    "text": "What is the speed of light?",
+    "label": "general"
+  },
+  {
+    "text": "How does the human heart work?",
+    "label": "general"
+  },
+  {
+    "text": "How can I improve my public speaking skills?",
+    "label": "general"
+  },
+  {
+    "text": "Give me tips for better time management",
+    "label": "general"
+  },
+  {
+    "text": "What are some strategies for dealing with stress?",
+    "label": "general"
+  },
+  {
+    "text": "How do I prepare for a job interview?",
+    "label": "general"
+  },
+  {
+    "text": "What should I consider when buying a used car?",
+    "label": "general"
+  },
+  {
+    "text": "Tips for starting a healthy morning routine",
+    "label": "general"
+  },
+  {
+    "text": "How can I improve my memory?",
+    "label": "general"
+  },
+  {
+    "text": "What are effective study techniques?",
+    "label": "general"
+  },
+  {
+    "text": "How do I set and achieve long-term goals?",
+    "label": "general"
+  },
+  {
+    "text": "Tips for maintaining a healthy work-life balance",
+    "label": "general"
+  },
+  {
+    "text": "Write a haiku about autumn",
+    "label": "general"
+  },
+  {
+    "text": "Describe a futuristic city",
+    "label": "general"
+  },
+  {
+    "text": "Write a short motivational paragraph",
+    "label": "general"
+  },
+  {
+    "text": "Create a metaphor for perseverance",
+    "label": "general"
+  },
+  {
+    "text": "Write a brief story about discovering something unexpected",
+    "label": "general"
+  },
+  {
+    "text": "Describe what freedom means to you",
+    "label": "general"
+  },
+  {
+    "text": "Write a letter to your future self",
+    "label": "general"
+  },
+  {
+    "text": "Create an analogy to explain teamwork",
+    "label": "general"
+  },
+  {
+    "text": "Describe the perfect morning in a small town",
+    "label": "general"
+  },
+  {
+    "text": "Write a short poem about the sea",
+    "label": "general"
+  },
+  {
+    "text": "What are the pros and cons of remote work?",
+    "label": "general"
+  },
+  {
+    "text": "Compare renewable and non-renewable energy sources",
+    "label": "general"
+  },
+  {
+    "text": "What's the difference between a democracy and a republic?",
+    "label": "general"
+  },
+  {
+    "text": "Compare the benefits of reading books vs watching documentaries",
+    "label": "general"
+  },
+  {
+    "text": "What are the advantages and disadvantages of social media?",
+    "label": "general"
+  },
+  {
+    "text": "Compare traditional education with online learning",
+    "label": "general"
+  },
+  {
+    "text": "What's the difference between weather and climate?",
+    "label": "general"
+  },
+  {
+    "text": "Compare electric cars vs gasoline cars",
+    "label": "general"
+  },
+  {
+    "text": "What were the main causes of World War I?",
+    "label": "general"
+  },
+  {
+    "text": "Explain the significance of the Renaissance",
+    "label": "general"
+  },
+  {
+    "text": "What was the Industrial Revolution?",
+    "label": "general"
+  },
+  {
+    "text": "Describe the major achievements of ancient Egypt",
+    "label": "general"
+  },
+  {
+    "text": "What was the Cold War about?",
+    "label": "general"
+  },
+  {
+    "text": "Explain the impact of the printing press on society",
+    "label": "general"
+  },
+  {
+    "text": "What is DNA and why is it important?",
+    "label": "general"
+  },
+  {
+    "text": "How do black holes form?",
+    "label": "general"
+  },
+  {
+    "text": "What is the difference between a virus and a bacteria?",
+    "label": "general"
+  },
+  {
+    "text": "How does evolution work?",
+    "label": "general"
+  },
+  {
+    "text": "What are the layers of the Earth?",
+    "label": "general"
+  },
+  {
+    "text": "Explain the greenhouse effect",
+    "label": "general"
+  },
+  {
+    "text": "How do I write an effective email?",
+    "label": "general"
+  },
+  {
+    "text": "What should a good resume include?",
+    "label": "general"
+  },
+  {
+    "text": "How do I start learning a new language?",
+    "label": "general"
+  },
+  {
+    "text": "What are the steps to start a small business?",
+    "label": "general"
+  },
+  {
+    "text": "How do I take better photographs?",
+    "label": "general"
+  },
+  {
+    "text": "What's the best way to learn to cook?",
+    "label": "general"
+  },
+  {
+    "text": "What makes a good leader?",
+    "label": "general"
+  },
+  {
+    "text": "Why is reading important?",
+    "label": "general"
+  },
+  {
+    "text": "What are the qualities of a good teacher?",
+    "label": "general"
+  },
+  {
+    "text": "Why is critical thinking important in daily life?",
+    "label": "general"
+  },
+  {
+    "text": "What role does art play in society?",
+    "label": "general"
+  },
+  {
+    "text": "Why is diversity important in the workplace?",
+    "label": "general"
+  },
+  {
+    "text": "Summarize the key events of the French Revolution",
+    "label": "general"
+  },
+  {
+    "text": "What are the benefits of regular exercise?",
+    "label": "general"
+  },
+  {
+    "text": "Explain how a democracy works",
+    "label": "general"
+  },
+  {
+    "text": "What is emotional intelligence?",
+    "label": "general"
+  },
+  {
+    "text": "Describe the process of making cheese",
+    "label": "general"
+  },
+  {
+    "text": "What are the different types of clouds?",
+    "label": "general"
+  },
+  {
+    "text": "How does a refrigerator work?",
+    "label": "general"
+  },
+  {
+    "text": "What is the scientific method?",
+    "label": "general"
+  },
+  {
+    "text": "Explain the concept of supply and demand",
+    "label": "general"
+  },
+  {
+    "text": "What are the main branches of philosophy?",
+    "label": "general"
+  },
+  {
+    "text": "How does the stock market work?",
+    "label": "general"
+  },
+  {
+    "text": "What is artificial intelligence?",
+    "label": "general"
+  },
+  {
+    "text": "Explain the difference between empathy and sympathy",
+    "label": "general"
+  },
+  {
+    "text": "What are the stages of grief?",
+    "label": "general"
+  },
+  {
+    "text": "How does the immune system work?",
+    "label": "general"
+  },
+  {
+    "text": "What is the butterfly effect?",
+    "label": "general"
+  },
+  {
+    "text": "Explain what inflation is and how it affects people",
+    "label": "general"
+  },
+  {
+    "text": "What are the benefits of meditation?",
+    "label": "general"
+  },
+  {
+    "text": "How does WiFi work?",
+    "label": "general"
+  },
+  {
+    "text": "What makes a good book recommendation?",
+    "label": "general"
+  }
+]
