@@ -1,27 +1,4 @@
-"""
-AdaptiveThink-MoE vs Base Model: Comparison Benchmark
-=======================================================
-
-This script runs a head-to-head comparison between:
-- Base Qwen2.5-0.5B-Instruct (no fine-tuning)
-- AdaptiveThink-MoE (router + specialized LoRA experts)
-
-Metrics compared:
-1. Response Quality (qualitative + pass/fail for code/math)
-2. Generation Time (latency)
-3. Routing Accuracy (does the router pick the right expert?)
-4. Code Correctness (does generated code run?)
-5. Math Accuracy (does it get the right number?)
-
-This produces a formatted report suitable for LinkedIn/blog posts.
-
-Why this comparison matters:
-----------------------------
-- Shows the VALUE of expert specialization vs generic model
-- Demonstrates that small models can punch above their weight with MoE
-- Quantifies the overhead cost of routing (is it worth it?)
-- Makes a compelling case for the research direction
-"""
+"""Base model vs MoE comparison benchmark — measures quality, accuracy, and latency."""
 
 import os
 import sys
@@ -30,7 +7,6 @@ import json
 import torch
 from datetime import datetime
 
-# Setup
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(project_root)
 sys.path.insert(0, project_root)
@@ -40,15 +16,10 @@ from scripts.pipeline import AdaptiveMoEPipeline
 
 
 class BaseModelInference:
-    """
-    Bare base model inference (no LoRA, no routing).
-    Used as the baseline for comparison.
-    """
+    """Bare base model inference (no LoRA) for baseline comparison."""
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-0.5B-Instruct"):
-        self.model_name = model_name
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-
         print("Loading base model for comparison...")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(
@@ -61,8 +32,6 @@ class BaseModelInference:
         self.model.eval()
 
     def generate(self, prompt: str, system_prompt: str = None, max_new_tokens: int = 256) -> dict:
-        """Generate response using only the base model."""
-
         if system_prompt is None:
             system_prompt = "You are a helpful assistant."
 
@@ -70,38 +39,24 @@ class BaseModelInference:
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt},
         ]
-
-        text = self.tokenizer.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True,
-        )
+        text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         inputs = self.tokenizer(text, return_tensors="pt").to(self.model.device)
 
         start_time = time.time()
         with torch.no_grad():
             outputs = self.model.generate(
-                **inputs,
-                max_new_tokens=max_new_tokens,
-                temperature=0.3,
-                top_p=0.9,
-                do_sample=True,
-                repetition_penalty=1.1,
+                **inputs, max_new_tokens=max_new_tokens,
+                temperature=0.3, top_p=0.9, do_sample=True, repetition_penalty=1.1,
             )
         generation_time = time.time() - start_time
 
         generated_ids = outputs[0][inputs["input_ids"].shape[1]:]
         response = self.tokenizer.decode(generated_ids, skip_special_tokens=True)
-
-        return {
-            "response": response,
-            "generation_time": generation_time,
-        }
+        return {"response": response, "generation_time": generation_time}
 
 
 def evaluate_code_correctness(code: str) -> bool:
-    """
-    Check if generated code is syntactically valid Python.
-    Returns True if the code can be parsed without errors.
-    """
+    """Check if code is syntactically valid Python."""
     try:
         compile(code, "<string>", "exec")
         return True
@@ -110,31 +65,17 @@ def evaluate_code_correctness(code: str) -> bool:
 
 
 def extract_math_answer(text: str) -> str:
-    """Extract final numerical answer from a math response."""
+    """Extract final numerical answer from response."""
     import re
-
-    # Pattern 1: "#### number"
     match = re.search(r"####\s*([\d,]+\.?\d*)", text)
     if match:
         return match.group(1).replace(",", "")
-
-    # Pattern 2: Last number in text
     numbers = re.findall(r"[\d,]+\.?\d*", text)
-    if numbers:
-        return numbers[-1].replace(",", "")
-
-    return ""
+    return numbers[-1].replace(",", "") if numbers else ""
 
 
 def run_benchmark():
-    """
-    Run the full comparison benchmark.
-
-    Test categories:
-    1. Code tasks (5 prompts) — measure syntax correctness + quality
-    2. Math tasks (5 prompts) — measure numerical accuracy
-    3. General tasks (5 prompts) — measure response quality + relevance
-    """
+    """Run the full comparison benchmark."""
 
     print("╔══════════════════════════════════════════════════════════╗")
     print("║    AdaptiveThink-MoE vs Base Model: Benchmark            ║")

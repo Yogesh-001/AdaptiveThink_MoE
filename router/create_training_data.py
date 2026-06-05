@@ -1,69 +1,11 @@
-"""
-Router Training Data Generator
-================================
-
-This script creates labeled training data for the router — the component
-that decides which expert (Code, Math, or General) should handle a prompt.
-
-How the Router Works (High-Level):
------------------------------------
-1. User sends a prompt: "Write a function to sort a list"
-2. Router encodes the prompt into a vector (embedding) using sentence-transformers
-3. Router classifies the embedding → "code"
-4. System loads the Code Expert LoRA adapter
-5. Model generates the response using the code expert
-
-Why Embeddings + Classifier (not keyword matching)?
----------------------------------------------------
-Simple keyword matching ("if 'code' in prompt → code expert") would fail on:
-- "Explain how recursion works" (code topic, no code keywords)
-- "What's the difference between a list and a tuple?" (code, but sounds general)
-- "If I have 3 apples and buy 2 more..." (math, no math keywords)
-
-Instead, we use semantic embeddings:
-- all-MiniLM-L6-v2 converts text → 384-dimensional vector
-- Similar meanings → similar vectors (even with different words)
-- A classifier learns the decision boundary between expert domains
-
-This approach is:
-- More robust than keywords
-- Lightweight (MiniLM is only 80MB, runs fast on CPU)
-- Extensible (add new experts by adding labeled examples)
-
-Research context:
-- This is similar to how Switch Transformer (Fedus et al., 2022) routes tokens
-- Our approach routes at the PROMPT level (coarser) rather than token level
-- Prompt-level routing is simpler but still effective for distinct domains
-"""
+"""Generate labeled training data for the router classifier."""
 
 import json
 import os
 
 
 def create_router_training_data(output_dir: str = None):
-    """
-    Generate labeled examples for training the router classifier.
-
-    Each example is: (prompt_text, expert_label)
-
-    We create examples across 3 categories:
-    - "code": Programming-related prompts
-    - "math": Mathematical/numerical reasoning prompts
-    - "general": Everything else
-
-    Design principles:
-    -------------------
-    1. Include OBVIOUS examples (easy boundary learning)
-    2. Include AMBIGUOUS examples (hard boundary learning)
-    3. Balance across categories (avoid bias)
-    4. Vary phrasing/style (generalization)
-
-    We aim for ~100 examples per category (300 total).
-    This is enough for a simple classifier because:
-    - The embeddings already capture semantics well
-    - We only have 3 classes
-    - The domains are fairly distinct
-    """
+    """Generate labeled examples for router training (code/math/general)."""
 
     if output_dir is None:
         output_dir = os.path.dirname(os.path.abspath(__file__))
